@@ -547,6 +547,7 @@ header {
     }
     .promo .promo_btn button {
         margin-bottom: 10px;
+        margin-left: 0;
     }
     .hit .hit_title {
         font-size: 29px;
@@ -594,7 +595,7 @@ header {
         font-size: 13px;
     }
     .order .order_div {
-        width: 240px;
+        display: none;
     }
     .catalog .catalog__content {
         justify-content: center;
