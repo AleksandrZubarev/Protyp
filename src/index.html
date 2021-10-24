@@ -17,10 +17,10 @@
                 </div>
                 <nav>
                     <ul class="menu_list">
-                        <li class="menu_item"><a class="menu_link" href="">Каталог</a></li>
-                        <li class="menu_item"><a class="menu_link" href="">Преимущества</a></li>
-                        <li class="menu_item"><a class="menu_link" href="">Отзывы</a></li>
-                        <li class="menu_item"><a class="menu_link" href="">Как заказать</a></li>
+                        <li class="menu_item"><a class="menu_link" href="#Catalog">Каталог</a></li>
+                        <li class="menu_item"><a class="menu_link" href="#Hit">Преимущества</a></li>
+                        <li class="menu_item"><a class="menu_link" href="#">Отзывы</a></li>
+                        <li class="menu_item"><a class="menu_link" href="#Order">Как заказать</a></li>
                     </ul>
                 </nav> 
             </div>
@@ -35,15 +35,15 @@
             <div class="promo_descr">Любая модель со скидкой 50% </div>
             <div class="promo_text">всего за <span>2990р.</span></div>                        
             <div class="promo_btn">
-                <button>повседневные портупеи</button>
-                <button>Эротические портупеи</button>
+                <a href="#everyday"><button>повседневные портупеи</button></a>
+                <a href="#Erotic"><button>Эротические портупеи</button></a>
             </div>
         </div>
     </section>
 
     <section class="hit">
         <div class="container">
-            <h2 class="hit_title">Хит №1 в мире – модные жеские портупеи</h2>
+            <h2 id="Hit" class="hit_title">Хит №1 в мире – модные жеские портупеи</h2>
             <div class="hit_divider"></div>
             <div class="hit_text"><p>Как и все кожаные аксессуары, портупея находится сегодня на пике востребованности в мире моды, даря своей <br> 
                                   обладательнице внимание и уверенность в себе.</p>
@@ -131,20 +131,20 @@
 
     <section class="catalog">
         <div class="container">
-            <h2 class="catalog_title">Каталог</h2>
+            <h2 id="Catalog"  class="catalog_title">Каталог</h2>
             <div class="catalog_divider"></div>
             <ul class="catalog_tabs">
-                <li class="catalog_tab catalog_tab_active">пАвседневные портупеи</li>
-                <li class="catalog_tab">эротичесские портупеи</li>
+                <li id="everyday" class="catalog_tab catalog_tab_active">повседневные портупеи</li>
+                <li id="Erotic" class="catalog_tab">эротичесские портупеи</li>
             </ul>
 
-            <div class="catalog__content">
+            <div class="catalog__content catalog__content_active">
                 <div class="catalog-item">
                    <img src="catalog/rounded_rectangle_1.png" alt=""> 
                    <div class="catalog-item__content">-53%</div>
                    <div class="catalog-item_subtitle">Портупея “Пеппи”</div>    
                    <ul class="catalog-item_list">
-                       <li class="catalog-item_it catalog-item_it_active">xs</li>
+                       <li class="catalog-item_it">xs</li>
                        <li class="catalog-item_it">s</li>
                        <li class="catalog-item_it">m</li>
                        <li class="catalog-item_it">l</li>
@@ -167,7 +167,7 @@
                 <div class="catalog-item__content">-53%</div> 
                 <div class="catalog-item_subtitle">Портупея “Влади”</div>    
                 <ul class="catalog-item_list">
-                    <li class="catalog-item_it catalog-item_it_active">xs</li>
+                    <li class="catalog-item_it">xs</li>
                     <li class="catalog-item_it">s</li>
                     <li class="catalog-item_it">m</li>
                     <li class="catalog-item_it">l</li>
@@ -183,14 +183,14 @@
                     <div class="catalog-item_price">2990 р</div>
                  </div>
                  <button class="catalog-item_btn">Заказать</button>
-            </div>
+               </div>
 
-            <div class="catalog-item">
+               <div class="catalog-item">
                 <img src="catalog/rounded_rectangle_3.png" alt="">
                 <div class="catalog-item__content">-53%</div> 
                 <div class="catalog-item_subtitle">Портупея “Джони Миллер”</div>    
                 <ul class="catalog-item_list">
-                    <li class="catalog-item_it catalog-item_it_active">xs</li>
+                    <li class="catalog-item_it">xs</li>
                     <li class="catalog-item_it">s</li>
                     <li class="catalog-item_it">m</li>
                     <li class="catalog-item_it">l</li>
@@ -206,14 +206,14 @@
                     <div class="catalog-item_price">2990 р</div>
                  </div>
                  <button class="catalog-item_btn">Заказать</button>
-            </div>
+               </div>
 
-            <div class="catalog-item">
+               <div class="catalog-item">
                 <img src="catalog/rounded_rectangle_1.png" alt=""> 
                 <div class="catalog-item__content">-53%</div>
                 <div class="catalog-item_subtitle">Портупея “Пеппи”</div>    
                 <ul class="catalog-item_list">
-                    <li class="catalog-item_it catalog-item_it_active">xs</li>
+                    <li class="catalog-item_it">xs</li>
                     <li class="catalog-item_it">s</li>
                     <li class="catalog-item_it">m</li>
                     <li class="catalog-item_it">l</li>
@@ -229,14 +229,14 @@
                     <div class="catalog-item_price">2990 р</div>
                  </div>
                  <button class="catalog-item_btn">Заказать</button>
-            </div>
+               </div>
 
-            <div class="catalog-item">
+               <div class="catalog-item">
                 <img src="catalog/rounded_rectangle_2.png" alt="">
                 <div class="catalog-item__content">-53%</div> 
                 <div class="catalog-item_subtitle">Портупея “Влади”</div>    
                 <ul class="catalog-item_list">
-                    <li class="catalog-item_it catalog-item_it_active">xs</li>
+                    <li class="catalog-item_it">xs</li>
                     <li class="catalog-item_it">s</li>
                     <li class="catalog-item_it">m</li>
                     <li class="catalog-item_it">l</li>
@@ -252,14 +252,14 @@
                     <div class="catalog-item_price">2990 р</div>
                  </div>
                  <button class="catalog-item_btn">Заказать</button>
-            </div>
+               </div>
 
-            <div class="catalog-item">
+               <div class="catalog-item">
                 <img src="catalog/rounded_rectangle_3.png" alt=""> 
                 <div class="catalog-item__content">-53%</div>
                 <div class="catalog-item_subtitle">Портупея “Джони Миллер”</div>    
                 <ul class="catalog-item_list">
-                    <li class="catalog-item_it catalog-item_it_active">xs</li>
+                    <li class="catalog-item_it">xs</li>
                     <li class="catalog-item_it">s</li>
                     <li class="catalog-item_it">m</li>
                     <li class="catalog-item_it">l</li>
@@ -275,13 +275,85 @@
                     <div class="catalog-item_price">2990 р</div>
                  </div>
                  <button class="catalog-item_btn">Заказать</button>
+               </div>
+           </div>
+
+           <div class="catalog__content">
+              <div class="catalog-item">
+               <img src="catalog/rounded_rectangle_1.png" alt=""> 
+               <div class="catalog-item__content">-53%</div>
+               <div class="catalog-item_subtitle">Портупея “Пеппи”</div>    
+               <ul class="catalog-item_list">
+                   <li class="catalog-item_it">xs</li>
+                   <li class="catalog-item_it">s</li>
+                   <li class="catalog-item_it">m</li>
+                   <li class="catalog-item_it">l</li>
+                   <li class="catalog-item_it catalog-item_it_none">xl</li>
+                   <li class="catalog-item_it catalog-item_it_none">xxl</li>
+               </ul>
+               <div class="catalog-item_wrap">
+                   <div class="catalog-item_picblack"></div>
+                   <div class="catalog-item_picred"></div>
+               </div>
+               <div class="catalog-item_prices">
+                   <div class="catalog-item_old-price">4990 р</div>
+                   <div class="catalog-item_price">2990 р</div>
+                </div>
+                <button class="catalog-item_btn">Заказать</button>
+              </div>
+
+              <div class="catalog-item">
+            <img src="catalog/rounded_rectangle_2.png" alt="">
+            <div class="catalog-item__content">-53%</div> 
+            <div class="catalog-item_subtitle">Портупея “Влади”</div>    
+            <ul class="catalog-item_list">
+                <li class="catalog-item_it">xs</li>
+                <li class="catalog-item_it">s</li>
+                <li class="catalog-item_it">m</li>
+                <li class="catalog-item_it">l</li>
+                <li class="catalog-item_it">xl</li>
+                <li class="catalog-item_it">xxl</li>
+            </ul>
+            <div class="catalog-item_wrap">
+                <div class="catalog-item_picblack"></div>
+               
             </div>
+            <div class="catalog-item_prices">
+                <div class="catalog-item_old-price">4990 р</div>
+                <div class="catalog-item_price">2990 р</div>
+             </div>
+             <button class="catalog-item_btn">Заказать</button>
+              </div>
+
+              <div class="catalog-item">
+            <img src="catalog/rounded_rectangle_3.png" alt="">
+            <div class="catalog-item__content">-53%</div> 
+            <div class="catalog-item_subtitle">Портупея “Джони Миллер”</div>    
+            <ul class="catalog-item_list">
+                <li class="catalog-item_it">xs</li>
+                <li class="catalog-item_it">s</li>
+                <li class="catalog-item_it">m</li>
+                <li class="catalog-item_it">l</li>
+                <li class="catalog-item_it catalog-item_it_none">xl</li>
+                <li class="catalog-item_it catalog-item_it_none">xxl</li>
+            </ul>
+            <div class="catalog-item_wrap">
+                <div class="catalog-item_picblack"></div>
+                <div class="catalog-item_picred"></div>
             </div>
+            <div class="catalog-item_prices">
+                <div class="catalog-item_old-price">4990 р</div>
+                <div class="catalog-item_price">2990 р</div>
+             </div>
+             <button class="catalog-item_btn">Заказать</button>
+              </div>
+           </div>
+        </div>
     </section>
 
     <footer class="order">
         <div class="container">
-            <h2 class="order_title">КАК закзать?</h2>
+            <h2 id="Order" class="order_title">КАК закзать?</h2>
             <div class="order_divider"></div>
             <div class="order_block">
                 <div class="order_round">
@@ -319,5 +391,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

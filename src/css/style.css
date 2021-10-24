@@ -113,6 +113,10 @@ header {
     color: #ffffff;
 }
 
+.promo .promo_btn a {
+    text-decoration: none;
+}
+
 .promo .promo_btn button:hover {
     color: #1e1e1e;
     background-color: #fff;
@@ -280,10 +284,14 @@ header {
 }
 
 .catalog .catalog__content {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 30px;
+}
+
+.catalog .catalog__content_active {
+    display: flex;
 }
 
 .catalog .catalog-item {
@@ -293,6 +301,11 @@ header {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
+}
+
+.catalog .catalog-item img {
+    display: block;
+    width: 100%;
 }
 
 .catalog .catalog-item__content {
