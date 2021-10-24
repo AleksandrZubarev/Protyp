@@ -8,7 +8,6 @@ $(document).ready(function() {
       $('ul.catalog-item_list').on('click', 'li:not(.catalog-item_it_active)', function() {
         $(this)
           .addClass('catalog-item_it_active').siblings().removeClass('catalog-item_it_active');
-          
       });  
 });
 
