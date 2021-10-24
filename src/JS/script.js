@@ -12,4 +12,14 @@ $(document).ready(function() {
 });
 
 
+$('.modal__close').on('click', function() {
+  $('.overlay,#order').fadeOut();
+});
 
+
+$('.catalog-item_btn').each(function(i) {
+  $(this).on('click', function() {
+      $('#order .modal__text').text($('.catalog-item_subtitle').eq(i).text());
+      $('.overlay, #order').fadeIn();
+  })
+});

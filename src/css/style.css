@@ -487,6 +487,102 @@ header {
 }
 
 
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0, .56);
+}
+
+.overlay .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    min-height: 400px;
+    background-color: #f2f2f2;
+    padding: 38px 40px 40px 40px;
+}
+
+.overlay .modal .modal__close {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    top: -1px;
+    right: -40px;
+    cursor: pointer;
+}
+
+.overlay .modal .modal__close span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #c70101;
+}
+
+.overlay .modal .modal__close span:nth-child(1) {
+    transform: translateY(9px) rotate(-45deg);
+}
+.overlay .modal .modal__close span:nth-child(2) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.overlay .modal .modal__subtitle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #0d0d0d;
+    margin-bottom: 12px;
+}
+
+.overlay .modal .modal__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #0d0d0d;
+}
+
+.feed-form {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.feed-form input {
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: none;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4b4b4b;
+}
+
+.button__submit {
+    margin: 0 auto;
+    display: block;
+    width: 260px;
+    height: 56px;
+    margin-top: 6px;
+    background-color: #e8a900;
+    background-image: linear-gradient(0.0deg, #4776e6 0%, #8e54e9 100%);
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
 @media (max-width: 960px) {
     .container {
         max-width: 640px;
@@ -628,5 +724,16 @@ header {
         width: 206px;
         font-size: 9px;
         line-height: 13px;
+    }
+    .overlay .modal {
+        padding: 15px;
+        width: 310px;
+    }
+    .feed-form {
+        width: 280px;
+    }
+    .overlay .modal .modal__close {
+        top: -30px;
+        right: -6px;
     }
 }
