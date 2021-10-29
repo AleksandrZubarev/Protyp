@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@keyframes pil {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 * {
     font-family: 'Open Sans', sans-serif;
@@ -292,6 +300,8 @@ header {
 
 .catalog .catalog__content_active {
     display: flex;
+    animation-name: pil;
+    animation-duration: 1s;
 }
 
 .catalog .catalog-item {
